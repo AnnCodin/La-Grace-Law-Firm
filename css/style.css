@@ -1208,8 +1208,8 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 
 .slide-title {
   font-size: 30px;
+  font-weight: 400;
   line-height: 36px;
-  font-weight: 300;
   color: #fff;
   margin: 20px 0 10px;
 }
@@ -1228,12 +1228,12 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 
 .slide-sub-title {
   font-style: normal;
-  font-size: 60px;
-  line-height: 58px;
+  font-size: 57px;
+  line-height: 78px;
   margin: 20px 0;
   color: #fff;
-  font-weight: 900;
-  text-transform: uppercase;
+  font-weight: 700;
+  text-transform: capitalize;
   letter-spacing: -1px;
 }
 
