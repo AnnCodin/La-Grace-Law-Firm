@@ -1115,7 +1115,6 @@ ul.navbar-nav > li > a {
   right: 0;
 }
 
-/* Get a quote */
 .header-schedule-consultation .btn-primary {
   padding: 12px 25px !important;
   font-size: 13px;
@@ -1138,7 +1137,7 @@ ul.navbar-nav > li > a {
   }
 }
 
-.header-get-a-quote .btn-primary:hover {
+.header-schedule-consultation .btn-primary:hover {
   background: #272d33;
   color: #ffb600 !important;
 }
@@ -1185,7 +1184,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
 
 .slide-title {
   font-size: 30px;
-  font-weight: 400;
+  font-weight: 600;
   line-height: 36px;
   color: #fff;
   margin: 20px 0 10px;
@@ -1210,7 +1209,7 @@ ul.navbar-nav > li.header-get-a-quote:hover > a:after {
   line-height: 78px;
   margin: 20px 0;
   color: #fff;
-  font-weight: 600;
+  font-weight: 800;
   text-transform: capitalize;
   letter-spacing: -1px;
 }
