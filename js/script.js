@@ -44,7 +44,7 @@ function prevSlide() {
 
 // Start the automatic sliding of images
 function startAutoSlide() {
-  autoSlideInterval = setInterval(nextSlide, 4000); // Slide every 4 seconds
+  autoSlideInterval = setInterval(nextSlide, 8000); // Slide every 4 seconds
 }
 
 // Stop the automatic sliding
