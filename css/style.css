@@ -131,7 +131,7 @@
 .prev,
 .next {
   position: absolute;
-  top: 60%;
+  top: 50%;
   transform: translateY(-50%);
   background-color: rgba(0, 0, 0, 0.5);
   color: white;
@@ -167,7 +167,7 @@
   padding-left: 150px;
   color: #fff;
   position: absolute;
-  top: 85%;
+  top: 70%;
   transform: translateY(-50%);
   z-index: 2;
 }
@@ -187,9 +187,16 @@
   font-family: "Raleway";
 }
 
+.hero-cards {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-50%);
+}
+
 .flip-card {
-  width: 300px;
-  height: 200px;
+  width: 400px;
+  height: 250px;
   perspective: 1000px;
 }
 
@@ -215,6 +222,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 100px 20px;
 }
 
 .flip-card-front {
