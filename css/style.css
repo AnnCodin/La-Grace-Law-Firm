@@ -1,15 +1,5 @@
-/*!------------------------------------------------------------------
-[MAIN STYLESHEET]
-
-Template Name: Constra - Construction Html5 Template
-Description: Constra - Construction Html5 Template
--------------------------------------------------------------------*/
-/*------------------------------------------------------------------
-[TABLE OF CONTENTS]
--------------------------------------------------------------------*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,600i,700,700i,800|Open+Sans:400,400i,600,600i,700,700i,800&display=swap);
-/* Typography
-================================================== */
+
 body {
   background: #fff;
   color: #555;
@@ -612,36 +602,6 @@ ul.top-info li p.info-text {
   flex-direction: column;
 }
 
-/* Top social */
-.top-social ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  margin-right: -12px;
-}
-
-@media (max-width: 767px) {
-  .top-social ul {
-    margin-right: 0;
-  }
-}
-
-.top-social ul li {
-  display: inline-block;
-  padding: 0;
-}
-
-.top-social ul li a {
-  color: #2c2c2c;
-  font-size: 14px;
-  transition: 400ms;
-  padding: 9px 12px;
-}
-
-.top-social ul li a:hover {
-  color: #333;
-}
-
 /* Top bar border */
 .top-bar-border {
   padding: 8px 20px 8px;
@@ -669,34 +629,10 @@ ul.top-info li p.info-text {
   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.1);
 }
 
-.header-one,
-.header-one .site-navigation {
-  background: #23282d;
-}
-
-.header-one .navbar-collapse {
-  padding-left: 0;
-}
-
 @media (max-width: 991px) {
   .navbar-collapse.collapse {
     overflow-y: auto;
   }
-}
-
-.header-one ul.navbar-nav > li {
-  padding-left: 0;
-  padding-right: 30px;
-}
-
-@media (max-width: 991px) {
-  .header-one ul.navbar-nav > li {
-    padding-right: 0;
-  }
-}
-
-.header-one .logo-area {
-  padding: 30px 0;
 }
 
 .navbar-fixed {
@@ -737,12 +673,9 @@ ul.navbar-nav > li.active > a {
 
 /*-- Logo --*/
 .logo img {
-  width: auto;
-  height: 35px;
-}
-
-.header-two .logo img {
-  height: 30px;
+  /* width: 100%; */
+  max-width: 170px;
+  height: auto;
 }
 
 /* header right */
