@@ -188,10 +188,12 @@
 }
 
 .hero-cards {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   transform: translateY(-50%);
+  z-index: 100;
 }
 
 .flip-card {
@@ -222,7 +224,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding: 100px 20px;
+  padding: 60px 20px;
 }
 
 .flip-card-front {
@@ -230,8 +232,30 @@
   color: #fff;
 }
 
+#middle-front {
+  background: #000526;
+}
+
 .flip-card-back {
   background: #fab80d;
   color: #000;
   transform: rotateY(180deg);
+}
+
+.flip-card h4 {
+  font-size: 28px;
+  line-height: 28px;
+  font-weight: 500;
+  padding: 8px 0;
+}
+
+.flip-card p {
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+}
+
+#icon {
+  font-size: 50px;
+  color: #fab80d;
 }
