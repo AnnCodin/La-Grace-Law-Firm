@@ -431,3 +431,43 @@
 .card #icon {
   color: #09135a;
 }
+
+.progress-counter {
+  width: 100%;
+  background-color: #09135a;
+  border-radius: 30px;
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  gap: 70px;
+  padding: 25px 0;
+}
+
+.counter-text {
+  display: flex;
+  gap: 15px;
+  text-align: left;
+  justify-content: center;
+  align-items: center;
+}
+
+.counter-text h3 {
+  font-size: 40px;
+  line-height: 45px;
+  font-weight: 500;
+  color: #fff;
+  font-family: "Raleway";
+}
+
+.counter-text p {
+  font-size: 16px;
+  line-height: 28px;
+  font-weight: 400;
+  color: #fff;
+}
+
+#counter-icon {
+  font-size: 50px;
+}
