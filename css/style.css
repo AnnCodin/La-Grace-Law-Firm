@@ -693,7 +693,7 @@
 .hamburger span {
   height: 3px;
   width: 25px;
-  background: white;
+  background: #000526;
   margin: 4px 0;
   transition: 0.4s;
 }
@@ -708,4 +708,32 @@
 
 .hamburger.active span:nth-child(3) {
   transform: rotate(-45deg) translate(5px, -5px);
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .nav-links {
+    position: absolute;
+    right: 0;
+    top: 0px;
+    background: #f39c12;
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    padding-top: 60px;
+  }
+
+  .nav-links li {
+    margin: 15px 0;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
 }
