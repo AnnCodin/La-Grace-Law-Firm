@@ -390,7 +390,7 @@
   font-size: 36px;
   line-height: 48px;
   font-weight: 400;
-  padding-bottom: 40px;
+  padding-bottom: 60px;
 }
 
 .main-cards {
@@ -470,4 +470,58 @@
 
 #counter-icon {
   font-size: 50px;
+}
+
+.main-three-content {
+  padding: 80px 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.main-three-content p {
+  color: #09135a;
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 400;
+  font-family: "Raleway";
+  padding-bottom: 15px;
+}
+
+.main-three-content h4 {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.team {
+  width: 100%;
+  max-width: 350px;
+  height: auto;
+  border-radius: 20px;
+  border-bottom: 5px solid #09135a;
+  background-color: #fff;
+  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+  padding-bottom: 20px;
+}
+
+.team-images {
+  display: flex;
+  gap: 30px;
+  padding-top: 60px;
+}
+
+.team-images img {
+  width: 100%;
+  max-width: 100%;
+  height: 80%;
+  border-radius: 20px;
+}
+
+.team h4 {
+  font-size: 22px;
+  line-height: 28px;
+  font-weight: 600;
+  color: #09135a;
+  padding-top: 30px;
 }
