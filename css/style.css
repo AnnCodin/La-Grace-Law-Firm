@@ -520,8 +520,52 @@
 
 .team h4 {
   font-size: 22px;
-  line-height: 28px;
+  line-height: 35px;
   font-weight: 600;
   color: #09135a;
-  padding-top: 30px;
+  padding-top: 20px;
+}
+
+.testimonials-container {
+  background-color: #fff8e7;
+}
+
+.testimonials-content {
+  padding: 80px 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.testimonials-content p {
+  padding-bottom: 15px;
+  font-family: "Raleway";
+}
+
+.testimonials-content h4 {
+  font-size: 36px;
+  line-height: 48px;
+  font-weight: 400;
+}
+
+.stars {
+  color: #fab80d;
+  font-size: 25px;
+  padding: 30px 0;
+}
+
+#testimonials {
+  width: 100%;
+  max-width: 80%;
+  font-size: 16px;
+  line-height: 30px;
+  margin: auto;
+}
+
+#testimonials span {
+  font-weight: 700;
+}
+
+.testimonials-content button {
+  margin-top: 30px;
 }
