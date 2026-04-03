@@ -74,3 +74,16 @@ sliderContainer.addEventListener("mouseout", startAutoSlide);
 // Start auto-slide when the page loads
 startAutoSlide();
 updateDots(); // Initialize the dots
+
+const navbar = document.querySelector(".navbar");
+const stickyPoint = navbar.offsetTop;
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset >= stickyPoint) {
+    navbar.classList.add("sticky");
+    document.body.style.paddingTop = navbar.offsetHeight + "px";
+  } else {
+    navbar.classList.remove("sticky");
+    document.body.style.paddingTop = "0px";
+  }
+});
