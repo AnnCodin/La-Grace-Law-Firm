@@ -569,3 +569,109 @@
 .testimonials-content button {
   margin-top: 30px;
 }
+
+.footer-container {
+  background-color: #09135a;
+  padding: 80px 0;
+}
+
+.footer-logo img {
+  width: 100px;
+  cursor: pointer;
+}
+
+.footer-heading {
+  padding: 25px 0;
+}
+
+.footer-heading h4 {
+  color: #fff;
+  font-size: 18px;
+  line-height: 28px;
+  text-transform: uppercase;
+  border-left: 3px solid #fab80d;
+  height: 25px;
+  padding-left: 15px;
+}
+
+.footer-heading p {
+  font-size: 16px;
+  line-height: 26px;
+  color: #fff;
+  padding-top: 20px;
+  font-weight: 200;
+  width: 100%;
+  max-width: 100%;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  gap: 60px;
+}
+
+.footer-col1 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.footer-col2 {
+  width: 100%;
+  max-width: 100%;
+}
+
+.footer-col3 {
+  width: 100%;
+  max-width: 20%;
+}
+
+.col1 {
+  display: flex;
+  gap: 100px;
+}
+
+.col2 {
+  display: flex;
+  gap: 150px;
+}
+
+.col3 {
+  display: flex;
+  gap: 70px;
+}
+
+#work {
+  padding-bottom: 13px;
+}
+
+.footer-menu-list {
+  display: flex;
+  align-items: left;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding-top: 10px;
+}
+
+.menu-item {
+  display: flex;
+  gap: 15px;
+}
+
+#footer-icon {
+  color: #fab80d;
+}
+
+.gap {
+  padding-top: 20px;
+}
+
+.menu-item a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 200;
+}
+
+.menu-item a:hover {
+  color: #fab80d;
+}
