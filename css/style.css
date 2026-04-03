@@ -675,3 +675,10 @@
 .menu-item a:hover {
   color: #fab80d;
 }
+
+.copyright-notice {
+  background-color: #000526;
+  color: #fff;
+  padding: 30px 0;
+  text-align: center;
+}
