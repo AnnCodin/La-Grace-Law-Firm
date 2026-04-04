@@ -1,11 +1,6 @@
-const hamburger = document.getElementById("hamburger");
-const navLinks = document.getElementById("navLinks");
-const navbarBtn = document.querySelector(".navbar .btn");
-
 hamburger.addEventListener("click", () => {
   navLinks.classList.toggle("active");
   hamburger.classList.toggle("active");
-  navbarBtn.classList.toggle("active");
 });
 
 const slider = document.querySelector(".slider");
@@ -87,3 +82,13 @@ updateDots(); // Initialize the dots
 
 const navbar = document.querySelector(".navbar");
 const stickyPoint = navbar.offsetTop;
+
+window.addEventListener("scroll", () => {
+  if (window.pageYOffset >= stickyPoint) {
+    navbar.classList.add("sticky");
+    document.body.style.paddingTop = navbar.offsetHeight + "px";
+  } else {
+    navbar.classList.remove("sticky");
+    document.body.style.paddingTop = "0px";
+  }
+});

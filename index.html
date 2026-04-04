@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="icon" href="img/favicon.png" type="image/x-icon" />
     <link
       href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
@@ -13,46 +13,43 @@
   </head>
   <body>
     <header>
-      <section class="hero-section">
-        <div class="topbar">
-          <div class="container">
-            <div class="topbar-contact">
-              <div class="email-icon">
-                <i class="ri-mail-fill"></i>
-                <p>consultant@lagracelawfirm.com</p>
-              </div>
+      <div class="topbar">
+        <div class="topbar-contact">
+          <div class="email-icon">
+            <i class="ri-mail-fill"></i>
+            <p>consultant@lagracelawfirm.com</p>
+          </div>
 
-              <div class="email-icon">
-                <i class="ri-phone-fill"></i>
-                <p>000 0000 000</p>
-              </div>
-            </div>
+          <div class="email-icon">
+            <i class="ri-phone-fill"></i>
+            <p>000 0000 000</p>
           </div>
         </div>
+      </div>
+      <nav class="navbar">
+        <div class="logo"><img src="img/site_logo.png" alt="" /></div>
 
-        <nav>
-          <div class="navbar">
-            <div class="site-logo">
-              <img src="img/site_logo.png" alt="La Grâce Law Firm" />
-            </div>
-            <ul class="nav-links" id="navLinks">
-              <li><a href="index.html">Home</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Practice Areas</a></li>
-              <li><a href="#">Team</a></li>
-              <li><a href="#">Testimonial</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-            <button class="btn btn-primary">Schedule Consultation</button>
-          </div>
-          <div class="hamburger" id="hamburger">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </nav>
+        <ul class="nav-links" id="navLinks">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Practice Areas</a></li>
+          <li><a href="#">Team</a></li>
+          <li><a href="#">Testimonials</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
 
-        <!-- <div class="slider-container">
+        <a href="#" class="btn btn-primary" id="hero-btn"
+          >Schedule Consultation</a
+        >
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+
+      <section>
+        <div class="slider-container">
           <div class="slider">
             <div class="slide">
               <img src="img/main_slider/slide_1.jpg" alt="slider_one" />
@@ -76,7 +73,7 @@
               <img src="img/main_slider/slide_3.jpg" alt="slider_three" />
               <div class="hero-text">
                 <div class="heading">
-                  <h4>Committed to Excellence</h4>
+                  <h3>Committed to Excellence</h3>
                   <p>Award Winning Law Firm</p>
                 </div>
               </div>
@@ -84,124 +81,130 @@
           </div>
           <button class="prev">&#10094;</button>
           <button class="next">&#10095;</button>
-        </div> -->
-
-        <!-- <div class="container">
-          <div class="hero-cards">
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <i class="ri-thumb-up-fill" id="icon"></i>
-                  <h4>99.9% Success Rate</h4>
-                  <p>We have the best team of Attorneys...</p>
-                </div>
-
-                <div class="flip-card-back">
-                  <h4>99.9% Success Rate</h4>
-                  <p>
-                    We have the best team of Attorneys in-house who work hard to
-                    deliver excellence in all our services.
-                  </p>
-                </div>
+        </div>
+      </section>
+      <section>
+        <div class="hero-cards">
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ri-thumb-up-fill" id="icon"></i>
+                <h4>99.9% Success Rate</h4>
+                <p>We have the best team of Attorneys...</p>
               </div>
-            </div>
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front" id="middle-front">
-                  <i class="ri-service-fill" id="icon"></i>
-                  <h4>Expert Legal Services</h4>
-                  <p>Quality legal service is what we have been known for...</p>
-                </div>
 
-                <div class="flip-card-back">
-                  <h4>Expert Legal Services</h4>
-                  <p>
-                    Quality legal service is what we have been known for all
-                    these past years. We deliver on all our services.
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="flip-card">
-              <div class="flip-card-inner">
-                <div class="flip-card-front">
-                  <i class="ri-verified-badge-fill" id="icon"></i>
-                  <h4>High Certified</h4>
-                  <p>
-                    Our clients are always encouraged to recommend our firm to
-                    others...
-                  </p>
-                </div>
-
-                <div class="flip-card-back">
-                  <h4>High Certified</h4>
-                  <p>
-                    Our clients are always encouraged to recommend our firm to
-                    others, because our services are beyond measure.
-                  </p>
-                </div>
+              <div class="flip-card-back">
+                <h4>99.9% Success Rate</h4>
+                <p>
+                  We have the best team of Attorneys in-house who work hard to
+                  deliver excellence in all our services.
+                </p>
               </div>
             </div>
           </div>
-        </div> -->
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front" id="middle-front">
+                <i class="ri-service-fill" id="icon"></i>
+                <h4>Expert Legal Services</h4>
+                <p>Quality legal service is what we have been known for...</p>
+              </div>
+
+              <div class="flip-card-back">
+                <h4>Expert Legal Services</h4>
+                <p>
+                  Quality legal service is what we have been known for all these
+                  past years. We deliver on all our services.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="ri-verified-badge-fill" id="icon"></i>
+                <h4>High Certified</h4>
+                <p>
+                  Our clients are always encouraged to recommend our firm to
+                  others...
+                </p>
+              </div>
+
+              <div class="flip-card-back">
+                <h4>High Certified</h4>
+                <p>
+                  Our clients are always encouraged to recommend our firm to
+                  others, because our services are beyond measure.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </header>
 
-    <!-- <main>
+    <main>
       <section>
         <div class="about-conatiner">
-          <div class="container">
-            <div class="main-one-content">
-              <div class="left-content">
-                <img
-                  src="img/homepage_images/1698084059560-9a53de7b816b.jpg"
-                  alt=""
-                />
+          <div class="main-one-content">
+            <div class="left-content">
+              <img
+                src="img/homepage_images/1698084059560-9a53de7b816b.jpg"
+                alt=""
+              />
+            </div>
+            <div class="right-content">
+              <p id="main-subtitle">about us</p>
+              <h3 id="main-title">A Legacy of Legal Excellence</h3>
+              <p id="right-text">
+                Our team of experienced Attorneys have a diverse range of
+                expertise, covering a wide spectrum of legal areas. We
+                specialize in International Trade Laws, Company Law, Commercial
+                Law, Estate Litigation, etc. Our Attorneys have countless years
+                of experience and success, possessing sound knowledge of the law
+                and superior advocacy skills, enjoying the finest reputation,
+                and being briefed in many high profile and important cases.
+                Members of La Grâce Law Firm provide services of the highest
+                quality and work collaboratively with those that instruct them.
+                Our firm is conveniently located in Istanbul as well as Quebec
+                and our members are available to provide all aspects of legal
+                advice both within and outside of the court setting.
+              </p>
+
+              <div class="right-content-list">
+                <div class="list-item">
+                  <i class="ri-arrow-right-circle-fill" id="list-icon"></i>
+                  <p>Committed to excellence in legal practice.</p>
+                </div>
               </div>
-              <div class="right-content">
-                <p>about us</p>
-                <h3>A Legacy of Legal Excellence</h3>
-                <p id="right-text">
-                  Our team of experienced Attorneys have a diverse range of
-                  expertise, covering a wide spectrum of legal areas. We
-                  specialize in International Trade Laws, Company Law,
-                  Commercial Law, Estate Litigation, etc.
-                </p>
 
-                <div class="right-content-list">
-                  <div class="list-item">
-                    <i class="ri-arrow-right-circle-fill" id="list-icon"></i>
-                    <p>Committed to excellence in legal practice.</p>
-                  </div>
+              <div class="right-content-list">
+                <div class="list-item">
+                  <i class="ri-arrow-right-circle-fill" id="list-icon"></i>
+                  <p>We act with honesty and uphold ethical principles.</p>
                 </div>
-
-                <div class="right-content-list">
-                  <div class="list-item">
-                    <i class="ri-arrow-right-circle-fill" id="list-icon"></i>
-                    <p>We act with honesty and uphold ethical principles.</p>
-                  </div>
-                </div>
-
-                <div class="right-content-list">
-                  <div class="list-item">
-                    <i class="ri-arrow-right-circle-fill" id="list-icon"></i>
-                    <p>Meeting client’s need is our priority.</p>
-                  </div>
-                </div>
-
-                <div class="right-content-list">
-                  <div class="list-item">
-                    <i class="ri-arrow-right-circle-fill" id="list-icon"></i>
-                    <p>Road Test Preparation with 98% sucess.</p>
-                  </div>
-                </div>
-
-                <button class="btn btn-primary" id="right-btn">
-                  Read More
-                  <span> <i class="ri-arrow-right-long-fill"></i></span>
-                </button>
               </div>
+
+              <div class="right-content-list">
+                <div class="list-item">
+                  <i class="ri-arrow-right-circle-fill" id="list-icon"></i>
+                  <p>Meeting client’s need is our priority.</p>
+                </div>
+              </div>
+
+              <div class="right-content-list">
+                <div class="list-item">
+                  <i class="ri-arrow-right-circle-fill" id="list-icon"></i>
+                  <p>Road Test Preparation with 98% sucess.</p>
+                </div>
+              </div>
+
+              <div class="right-gap"></div>
+              <a href="#" class="btn btn-primary" id="main-btn">
+                Read More
+                <span> <i class="ri-arrow-right-long-fill"></i></span>
+              </a>
             </div>
           </div>
         </div>
@@ -209,79 +212,77 @@
 
       <section>
         <div class="practice-areas-container">
-          <div class="container">
-            <div class="main-two-content">
-              <p class="lined-text">What We Do</p>
-              <h4>Our Practice Areas</h4>
-              <div class="main-cards">
-                <div class="card">
-                  <i class="ri-earth-fill" id="icon"></i>
-                  <h3>International Trade Laws</h3>
-                  <p>
-                    We provide services like Import and export regulation,
-                    Customs valuation, International commercial transactions…etc
-                  </p>
+          <div class="main-two-content">
+            <p class="lined-text">What We Do</p>
+            <h4>Our Practice Areas</h4>
+            <div class="main-cards">
+              <div class="card">
+                <i class="ri-earth-fill" id="icon"></i>
+                <h3>International Trade Laws</h3>
+                <p>
+                  We provide services like Import and export regulation, Customs
+                  valuation, International commercial transactions…etc
+                </p>
+              </div>
+              <div class="card">
+                <i class="ri-building-fill" id="icon"></i>
+                <h3>Company Law</h3>
+                <p>
+                  Get services like Company formation and registration,
+                  Corporate Finance, Mergers and acquisitions, Securities
+                  regulation…etc
+                </p>
+              </div>
+              <div class="card">
+                <i class="ri-auction-fill" id="icon"></i>
+                <h3>Commercial Law</h3>
+                <p>
+                  Our services include Commercial litigation, Property and land
+                  transactions, Banking and finance, Debt collection,
+                  Drafting…etc
+                </p>
+              </div>
+            </div>
+            <button class="btn btn-primary">
+              View More
+              <span> <i class="ri-arrow-right-long-fill"></i></span>
+            </button>
+
+            <div class="progress-counter">
+              <div class="counter-text">
+                <div>
+                  <i class="ri-bar-chart-fill" id="counter-icon"></i>
                 </div>
-                <div class="card">
-                  <i class="ri-building-fill" id="icon"></i>
-                  <h3>Company Law</h3>
-                  <p>
-                    Get services like Company formation and registration,
-                    Corporate Finance, Mergers and acquisitions, Securities
-                    regulation…etc
-                  </p>
-                </div>
-                <div class="card">
-                  <i class="ri-auction-fill" id="icon"></i>
-                  <h3>Commercial Law</h3>
-                  <p>
-                    Our services include Commercial litigation, Property and
-                    land transactions, Banking and finance, Debt collection,
-                    Drafting…etc
-                  </p>
+                <div>
+                  <h3>12+</h3>
+                  <p>Years of Experience</p>
                 </div>
               </div>
-              <button class="btn btn-primary">
-                View More
-                <span> <i class="ri-arrow-right-long-fill"></i></span>
-              </button>
-
-              <div class="progress-counter">
-                <div class="counter-text">
-                  <div>
-                    <i class="ri-bar-chart-fill" id="counter-icon"></i>
-                  </div>
-                  <div>
-                    <h3>12+</h3>
-                    <p>Years of Experience</p>
-                  </div>
+              <div class="counter-text">
+                <div>
+                  <i class="ri-team-fill" id="counter-icon"></i>
                 </div>
-                <div class="counter-text">
-                  <div>
-                    <i class="ri-team-fill" id="counter-icon"></i>
-                  </div>
-                  <div>
-                    <h3>50+</h3>
-                    <p>Expert Attorneys</p>
-                  </div>
+                <div>
+                  <h3>50+</h3>
+                  <p>Expert Attorneys</p>
                 </div>
-                <div class="counter-text">
-                  <div>
-                    <i class="ri-emotion-happy-line" id="counter-icon"></i>
-                  </div>
-                  <div>
-                    <h3>500+</h3>
-                    <p>Happy Clients</p>
-                  </div>
+              </div>
+              <div class="counter-text">
+                <div>
+                  <i class="ri-emotion-happy-line" id="counter-icon"></i>
                 </div>
-                <div class="counter-text">
-                  <div>
-                    <i class="ri-bard-fill" id="counter-icon"></i>
-                  </div>
-                  <div>
-                    <h3>1000+</h3>
-                    <p>Completed Cases</p>
-                  </div>
+                <div>
+                  <h3>500+</h3>
+                  <p>Happy Clients</p>
+                </div>
+              </div>
+              <div class="counter-text">
+                <div>
+                  <i class="ri-bard-fill" id="counter-icon"></i>
+                </div>
+                <div>
+                  <h3>1000+</h3>
+                  <p>Completed Cases</p>
                 </div>
               </div>
             </div>
@@ -350,6 +351,7 @@
         </div>
       </section>
     </main>
+
     <footer>
       <section>
         <div class="footer-container">
@@ -474,7 +476,8 @@
           <p>© 2026. La Grâce Law Firm | All Rights Reserved.</p>
         </div>
       </section>
-    </footer> -->
-    <script src="js/script.js"></script>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

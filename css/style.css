@@ -1,30 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
 @import url(https://fonts.googleapis.com/css?family=Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", "Raleway";
-}
-
-.hero-section {
-  width: 100%;
-  height: 100vh;
-}
-
-.container {
-  width: 100%;
-  max-width: 1440px;
-  margin: 0 auto;
-  padding: 0 64px;
+  font-family: Arial, sans-serif;
 }
 
 .topbar {
-  width: 100%;
   background: #09135a;
-  padding: 10px 0;
-  position: relative;
-  z-index: 1001;
+  padding: 10px 40px;
+  top: 0;
+  height: 40px;
+  width: 100%;
+  z-index: 1000;
 }
 
 .topbar-contact {
@@ -42,20 +32,19 @@
   color: #fff;
 }
 
-.site-logo img {
-  max-width: 150px;
-  cursor: pointer;
-}
-
 .navbar {
-  margin: auto;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 15px 64px;
+  align-items: center;
+  padding: 10px 40px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .sticky {
+  width: 100%;
   position: fixed;
   top: 0;
   left: 0;
@@ -64,8 +53,13 @@
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+.logo img {
+  width: 100%;
+  max-width: 150px;
+}
+
 .nav-links {
-  list-style-type: none;
+  list-style: none;
   display: flex;
 }
 
@@ -75,11 +69,11 @@
 
 .nav-links a {
   text-decoration: none;
+  color: #000;
+  transition: 0.3s;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  color: #000;
-  transition: 0.3s;
 }
 
 .nav-links a:hover {
@@ -87,10 +81,10 @@
 }
 
 .btn {
-  padding: 10px 28px;
+  padding: 12px 24px;
+  border: none;
   min-height: 48px;
   background-color: #fab80d;
-  border: none;
   border-radius: 5px;
   color: #000;
   text-decoration: none;
@@ -114,9 +108,9 @@
 }
 
 .hamburger span {
-  height: 3px;
+  height: 2px;
   width: 25px;
-  background: #000526;
+  background: #000;
   margin: 4px 0;
   transition: 0.4s;
 }
@@ -189,11 +183,11 @@
 }
 
 .prev {
-  left: 64px;
+  left: 40px;
 }
 
 .next {
-  right: 64px;
+  right: 40px;
 }
 
 .prev:hover,
@@ -237,7 +231,7 @@
 }
 
 .flip-card {
-  width: 400px;
+  width: 350px;
   height: 250px;
   perspective: 1000px;
 }
@@ -296,14 +290,14 @@
 }
 
 #icon {
-  font-size: 50px;
-  color: #fab80d;
+  font-size: 40px;
+  color: #fff;
 }
 
 .about-conatiner {
   width: 100%;
   height: 100vh;
-  margin: 41vh 0 80px 0;
+  padding: 0px 40px;
 }
 
 .main-one-content {
@@ -321,7 +315,7 @@
   width: 100%;
   max-width: 100%;
   height: 100vh;
-  border-radius: 100px 0px 100px 100px;
+  border-radius: 80px 0px 80px 80px;
 }
 
 .right-content {
@@ -367,15 +361,17 @@
   text-transform: none;
 }
 
-#right-btn {
+.right-gap {
   margin-top: 20px;
 }
 
 .practice-areas-container {
   background-color: #fff8e7;
+  margin-top: 120px;
 }
+
 .main-two-content {
-  padding: 80px 0;
+  padding: 80px 40px;
   align-items: center;
   justify-content: center;
   text-align: center;
@@ -502,10 +498,11 @@
 }
 
 .main-three-content {
-  padding: 80px 0;
+  padding: 100px 40px;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: auto;
 }
 
 .main-three-content p {
@@ -525,7 +522,7 @@
 
 .team {
   width: 100%;
-  max-width: 350px;
+  max-width: 380px;
   height: auto;
   border-radius: 20px;
   border-bottom: 5px solid #09135a;
@@ -601,7 +598,7 @@
 
 .footer-container {
   background-color: #09135a;
-  padding: 80px 0;
+  padding: 80px 40px;
 }
 
 .footer-logo img {
@@ -708,62 +705,162 @@
 .copyright-notice {
   background-color: #000526;
   color: #fff;
-  padding: 30px 0;
+  padding: 20px 0;
   text-align: center;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 390px) {
   .topbar {
     display: none;
   }
 
-  .navbar {
-    position: relative;
-    padding: 15px 20px;
+  .logo img {
+    width: 100%;
+    max-width: 120px;
   }
 
-  .hamburger {
-    display: flex;
-    position: absolute;
-    right: 20px;
-    top: 20px;
-    z-index: 1003;
+  .navbar {
+    padding: 10px 20px;
   }
 
   .nav-links {
     position: fixed;
-    top: 0;
-    right: -100%;
+    right: 0;
+    top: 0px;
+    background: #fab80d;
     width: 70%;
-    height: 100vh;
-    background: #f39c12;
+    height: 100%;
     flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 80px;
-    transition: 0.3s ease;
+    align-items: left;
+    display: none;
+    padding: 80px 0 0 25px;
+  }
+
+  .nav-links a {
+    color: #000;
+  }
+
+  .nav-links a:hover {
+    color: #fff;
+  }
+  .nav-links li {
+    margin: 10px 0;
+  }
+
+  .hamburger {
     display: flex;
   }
 
   .nav-links.active {
-    right: 0;
+    display: flex;
   }
 
-  .nav-links li {
-    margin: 20px 0;
+  #hero-btn {
+    display: none;
   }
 
-  .navbar .btn {
-    position: fixed;
-    right: -100%;
-    top: 350px;
-    width: 70%;
+  .prev,
+  .next {
+    top: 50%;
+    width: 40px;
+    height: 40px;
+  }
+
+  .prev {
+    left: 20px;
+  }
+
+  .next {
+    right: 20px;
+  }
+
+  .hero-text {
+    padding-left: 70px;
+    top: 60%;
+  }
+
+  .hero-text h3 {
+    font-size: 18px;
+    line-height: 30px;
+  }
+
+  .hero-text p {
+    max-width: 80%;
+    font-size: 28px;
+    line-height: 38px;
+  }
+
+  .hero-cards {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    transform: translateY(10%);
+  }
+
+  .flip-card-inner {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+    position: relative;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-card h4 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .flip-card p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  #icon {
+    font-size: 40px;
+    color: #fff;
+  }
+
+  .about-conatiner {
+    width: 100%;
+    height: 100%;
+    margin-top: 150px;
+    padding: 0px 20px;
+  }
+
+  #main-subtitle {
     text-align: center;
-    z-index: 1002;
-    transition: 0.3s ease;
   }
 
-  .navbar .btn.active {
-    right: 0;
+  #main-title {
+    text-align: center;
+  }
+
+  .main-one-content {
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .left-content img {
+    height: 80vh;
+    border-radius: 40px 0px 40px 40px;
+  }
+
+  .right-content h3 {
+    font-size: 22px;
+    line-height: 26px;
+  }
+
+  .right-content-list {
+    font-size: 15px;
+  }
+
+  #main-btn {
+    display: flex;
+    margin: 0 60px;
+    justify-content: center;
   }
 }
