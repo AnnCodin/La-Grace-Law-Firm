@@ -3,479 +3,522 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-    <link rel="icon" href="img/favicon.png" type="image/x-icon" />
     <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Lato:wght@300;400;600;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="css/style.css" />
     <title>La Grâce Law Firm | Homepage</title>
   </head>
   <body>
-    <header>
-      <div class="topbar">
-        <div class="topbar-contact">
-          <div class="email-icon">
-            <i class="ri-mail-fill"></i>
-            <p>consultant@lagracelawfirm.com</p>
-          </div>
+    <!-- NAVBAR -->
+    <nav id="navbar">
+      <div class="nav-logo">
+        <img src="img/site_logo.png" alt="" />
+      </div>
 
-          <div class="email-icon">
-            <i class="ri-phone-fill"></i>
-            <p>000 0000 000</p>
+      <div class="nav-links" id="navLinks">
+        <a href="#" class="active">Home</a>
+        <a href="#">About Us</a>
+        <a href="#">Practice Areas</a>
+        <a href="#">Team</a>
+        <a href="#">Testimonials</a>
+        <a href="#">Contact</a>
+      </div>
+      <!-- <button class="nav-cta">Book Consultation</button> -->
+      <div class="hamburger" id="hamburger" onclick="toggleNav()">
+        <span></span><span></span><span></span>
+      </div>
+    </nav>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-content">
+        <p class="hero-pre">We Are Experienced</p>
+        <h1 class="hero-title">Welcome to <br />La Grâce Law Firm</h1>
+        <p class="hero-sub">
+          We are a team of dedicated legal professionals committed to fighting
+          for your rights. With decades of experience, we deliver justice you
+          can count on.
+        </p>
+        <div class="hero-btns">
+          <a href="#" class="btn-gold">Schedule Consultation</a>
+          <!-- <a href="#" class="btn-outline">Watch More</a> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- STATS BAR -->
+    <div class="stats-bar">
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24">
+            <path d="M3 6l9-4 9 4v2l-9 4-9-4V6z" />
+            <path d="M3 14l9 4 9-4" />
+            <path d="M3 10l9 4 9-4" />
+          </svg>
+        </div>
+        <div>
+          <div class="stat-title">Court Performance</div>
+          <div class="stat-desc">
+            Outstanding track record with over 1,120 successful cases resolved
+            in our clients' favor.
           </div>
         </div>
       </div>
-      <nav class="navbar">
-        <div class="logo"><img src="img/site_logo.png" alt="" /></div>
-
-        <ul class="nav-links" id="navLinks">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Practice Areas</a></li>
-          <li><a href="#">Team</a></li>
-          <li><a href="#">Testimonials</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
-
-        <a href="#" class="btn btn-primary" id="hero-btn"
-          >Schedule Consultation</a
-        >
-        <div class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24">
+            <circle cx="12" cy="8" r="4" />
+            <path d="M6 20v-2a6 6 0 0 1 12 0v2" />
+          </svg>
         </div>
-      </nav>
-
-      <section>
-        <div class="slider-container">
-          <div class="slider">
-            <div class="slide">
-              <img src="img/main_slider/slide_1.jpg" alt="slider_one" />
-              <div class="hero-text">
-                <div class="heading">
-                  <h3>La Grâce Law Firm</h3>
-                  <p>when you need justice</p>
-                </div>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="img/main_slider/slide_2.jpg" alt="slider_two" />
-              <div class="hero-text">
-                <div class="heading">
-                  <h3>Need any help?</h3>
-                  <p>We Protect What You Hold Dear</p>
-                </div>
-              </div>
-            </div>
-            <div class="slide">
-              <img src="img/main_slider/slide_3.jpg" alt="slider_three" />
-              <div class="hero-text">
-                <div class="heading">
-                  <h3>Committed to Excellence</h3>
-                  <p>Award Winning Law Firm</p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <button class="prev">&#10094;</button>
-          <button class="next">&#10095;</button>
-        </div>
-      </section>
-      <section>
-        <div class="hero-cards">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <i class="ri-thumb-up-fill" id="icon"></i>
-                <h4>99.9% Success Rate</h4>
-                <p>We have the best team of Attorneys...</p>
-              </div>
-
-              <div class="flip-card-back">
-                <h4>99.9% Success Rate</h4>
-                <p>
-                  We have the best team of Attorneys in-house who work hard to
-                  deliver excellence in all our services.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front" id="middle-front">
-                <i class="ri-service-fill" id="icon"></i>
-                <h4>Expert Legal Services</h4>
-                <p>Quality legal service is what we have been known for...</p>
-              </div>
-
-              <div class="flip-card-back">
-                <h4>Expert Legal Services</h4>
-                <p>
-                  Quality legal service is what we have been known for all these
-                  past years. We deliver on all our services.
-                </p>
-              </div>
-            </div>
-          </div>
-
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <i class="ri-verified-badge-fill" id="icon"></i>
-                <h4>High Certified</h4>
-                <p>
-                  Our clients are always encouraged to recommend our firm to
-                  others...
-                </p>
-              </div>
-
-              <div class="flip-card-back">
-                <h4>High Certified</h4>
-                <p>
-                  Our clients are always encouraged to recommend our firm to
-                  others, because our services are beyond measure.
-                </p>
-              </div>
-            </div>
+        <div>
+          <div class="stat-title">Expert Attorneys</div>
+          <div class="stat-desc">
+            Our elite team of 60+ attorneys brings deep expertise across all
+            major legal disciplines.
           </div>
         </div>
-      </section>
-    </header>
-
-    <main>
-      <section>
-        <div class="about-conatiner">
-          <div class="main-one-content">
-            <div class="left-content">
-              <img
-                src="img/homepage_images/1698084059560-9a53de7b816b.jpg"
-                alt=""
-              />
-            </div>
-            <div class="right-content">
-              <p id="main-subtitle">about us</p>
-              <h3 id="main-title">A Legacy of Legal Excellence</h3>
-              <p id="right-text">
-                Our team of experienced Attorneys have a diverse range of
-                expertise, covering a wide spectrum of legal areas. We
-                specialize in International Trade Laws, Company Law, Commercial
-                Law, Estate Litigation, etc. Our Attorneys have countless years
-                of experience and success, possessing sound knowledge of the law
-                and superior advocacy skills, enjoying the finest reputation,
-                and being briefed in many high profile and important cases.
-                Members of La Grâce Law Firm provide services of the highest
-                quality and work collaboratively with those that instruct them.
-                Our firm is conveniently located in Istanbul as well as Quebec
-                and our members are available to provide all aspects of legal
-                advice both within and outside of the court setting.
-              </p>
-
-              <div class="right-content-list">
-                <div class="list-item">
-                  <i class="ri-arrow-right-circle-fill" id="list-icon"></i>
-                  <p>Committed to excellence in legal practice.</p>
-                </div>
-              </div>
-
-              <div class="right-content-list">
-                <div class="list-item">
-                  <i class="ri-arrow-right-circle-fill" id="list-icon"></i>
-                  <p>We act with honesty and uphold ethical principles.</p>
-                </div>
-              </div>
-
-              <div class="right-content-list">
-                <div class="list-item">
-                  <i class="ri-arrow-right-circle-fill" id="list-icon"></i>
-                  <p>Meeting client’s need is our priority.</p>
-                </div>
-              </div>
-
-              <div class="right-content-list">
-                <div class="list-item">
-                  <i class="ri-arrow-right-circle-fill" id="list-icon"></i>
-                  <p>Road Test Preparation with 98% sucess.</p>
-                </div>
-              </div>
-
-              <div class="right-gap"></div>
-              <a href="#" class="btn btn-primary" id="main-btn">
-                Read More
-                <span> <i class="ri-arrow-right-long-fill"></i></span>
-              </a>
-            </div>
+      </div>
+      <div class="stat-item">
+        <div class="stat-icon">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"
+            />
+          </svg>
+        </div>
+        <div>
+          <div class="stat-title">5-Star Reviewed</div>
+          <div class="stat-desc">
+            Consistently rated 5-stars by our clients for dedication,
+            professionalism, and results.
           </div>
         </div>
-      </section>
+      </div>
+    </div>
 
-      <section>
-        <div class="practice-areas-container">
-          <div class="main-two-content">
-            <p class="lined-text">What We Do</p>
-            <h4>Our Practice Areas</h4>
-            <div class="main-cards">
-              <div class="card">
-                <i class="ri-earth-fill" id="icon"></i>
-                <h3>International Trade Laws</h3>
-                <p>
-                  We provide services like Import and export regulation, Customs
-                  valuation, International commercial transactions…etc
-                </p>
-              </div>
-              <div class="card">
-                <i class="ri-building-fill" id="icon"></i>
-                <h3>Company Law</h3>
-                <p>
-                  Get services like Company formation and registration,
-                  Corporate Finance, Mergers and acquisitions, Securities
-                  regulation…etc
-                </p>
-              </div>
-              <div class="card">
-                <i class="ri-auction-fill" id="icon"></i>
-                <h3>Commercial Law</h3>
-                <p>
-                  Our services include Commercial litigation, Property and land
-                  transactions, Banking and finance, Debt collection,
-                  Drafting…etc
-                </p>
-              </div>
-            </div>
-            <button class="btn btn-primary">
-              View More
-              <span> <i class="ri-arrow-right-long-fill"></i></span>
-            </button>
-
-            <div class="progress-counter">
-              <div class="counter-text">
-                <div>
-                  <i class="ri-bar-chart-fill" id="counter-icon"></i>
-                </div>
-                <div>
-                  <h3>12+</h3>
-                  <p>Years of Experience</p>
-                </div>
-              </div>
-              <div class="counter-text">
-                <div>
-                  <i class="ri-team-fill" id="counter-icon"></i>
-                </div>
-                <div>
-                  <h3>50+</h3>
-                  <p>Expert Attorneys</p>
-                </div>
-              </div>
-              <div class="counter-text">
-                <div>
-                  <i class="ri-emotion-happy-line" id="counter-icon"></i>
-                </div>
-                <div>
-                  <h3>500+</h3>
-                  <p>Happy Clients</p>
-                </div>
-              </div>
-              <div class="counter-text">
-                <div>
-                  <i class="ri-bard-fill" id="counter-icon"></i>
-                </div>
-                <div>
-                  <h3>1000+</h3>
-                  <p>Completed Cases</p>
-                </div>
-              </div>
-            </div>
+    <!-- ABOUT -->
+    <section class="about">
+      <div class="about-inner">
+        <div class="about-img-wrap">
+          <div
+            class="about-img"
+            style="
+              background-image: url(&quot;https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=600&quot;);
+            "
+          ></div>
+          <div class="about-badge">
+            <span class="about-badge-num">25+</span>
+            <span class="about-badge-label">Years<br />Experience</span>
           </div>
         </div>
-      </section>
-      <section>
-        <div class="team-container">
-          <div class="container">
-            <div class="main-three-content">
-              <p class="lined-text">Our Experts</p>
-              <h4>Meet Our Team</h4>
+        <div class="about-text-col">
+          <p class="about-pre">About Us</p>
+          <h2 class="about-title">Vote for<br />Robert Rommel</h2>
+          <p class="about-text">
+            Robert Rommel has built his career on unwavering dedication to
+            justice. As a decorated attorney and legal advocate, he has
+            tirelessly represented individuals and families against powerful
+            institutions.
+          </p>
+          <div class="about-divider"></div>
+          <p class="about-text">
+            His courtroom experience spans over two decades, covering criminal
+            law, civil litigation, family disputes, and corporate matters.
+            Robert's commitment is to ensure every client receives the
+            high-quality legal representation they deserve.
+          </p>
+          <a href="#" class="btn-gold" style="margin-top: 10px">Read More</a>
+        </div>
+      </div>
+    </section>
 
-              <div class="team-images">
-                <div class="team">
-                  <img src="img/team/Stefano Albanese.jpg" alt="" />
-                  <h4>Stefano Albanese, Esq.</h4>
-                  <p>Senior Managing Partner</p>
-                </div>
-                <div class="team">
-                  <img src="img/team/Fabio Ferrati.jpg" alt="" />
-                  <h4>Fabio Ferrati, Esq.</h4>
-                  <p>Partner</p>
-                </div>
-                <div class="team">
-                  <img src="img/team/Grace Reka.jpg" alt="" />
-                  <h4>Grace Reka</h4>
-                  <p>Associate</p>
-                </div>
-              </div>
+    <!-- PRACTICE AREAS -->
+    <section class="practice" id="practice">
+      <div class="section-header">
+        <p class="section-pre">What We Do</p>
+        <h2 class="section-title">Our Practice Areas</h2>
+      </div>
+      <div class="practice-grid">
+        <div class="practice-card">
+          <div class="pc-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2" />
+              <circle cx="9" cy="7" r="4" />
+              <path d="M23 21v-2a4 4 0 0 0-3-3.87" />
+              <path d="M16 3.13a4 4 0 0 1 0 7.75" />
+            </svg>
+          </div>
+          <div class="pc-title">Family Law</div>
+          <div class="pc-desc">
+            Expert guidance through divorce, child custody, adoption, and all
+            family-related legal matters with compassionate support.
+          </div>
+          <a href="#" class="pc-link">Explore →</a>
+        </div>
+        <div class="practice-card active">
+          <div class="pc-icon">
+            <svg viewBox="0 0 24 24">
+              <rect x="2" y="7" width="20" height="14" rx="2" />
+              <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16" />
+            </svg>
+          </div>
+          <div class="pc-title">Business Law</div>
+          <div class="pc-desc">
+            Strategic legal counsel for corporations, startups, mergers,
+            acquisitions, and complex commercial transactions.
+          </div>
+          <a href="#" class="pc-link">Explore →</a>
+        </div>
+        <div class="practice-card">
+          <div class="pc-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
+            </svg>
+          </div>
+          <div class="pc-title">Criminal Law</div>
+          <div class="pc-desc">
+            Aggressive criminal defense representation for felonies,
+            misdemeanors, DUIs, and white-collar crimes at all levels.
+          </div>
+          <a href="#" class="pc-link">Explore →</a>
+        </div>
+        <div class="practice-card">
+          <div class="pc-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z" />
+              <polyline points="9 22 9 12 15 12 15 22" />
+            </svg>
+          </div>
+          <div class="pc-title">Land Law</div>
+          <div class="pc-desc">
+            Property rights, real estate disputes, zoning, and land acquisition
+            handled with precision and clarity.
+          </div>
+          <a href="#" class="pc-link">Explore →</a>
+        </div>
+        <div class="practice-card">
+          <div class="pc-icon">
+            <svg viewBox="0 0 24 24">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M12 8v4l3 3" />
+            </svg>
+          </div>
+          <div class="pc-title">Civil Law</div>
+          <div class="pc-desc">
+            Resolving disputes between individuals and organizations — from
+            contract breaches to personal injury claims.
+          </div>
+          <a href="#" class="pc-link">Explore →</a>
+        </div>
+        <div class="practice-card">
+          <div class="pc-icon">
+            <svg viewBox="0 0 24 24">
+              <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+              <path d="M6 12v5c3 3 9 3 12 0v-5" />
+            </svg>
+          </div>
+          <div class="pc-title">Education Law</div>
+          <div class="pc-desc">
+            Protecting the rights of students, educators, and institutions in
+            schools, universities, and academic settings.
+          </div>
+          <a href="#" class="pc-link">Explore →</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALLERY -->
+    <div class="gallery">
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1494522855154-9297ac14b55f?w=600"
+          alt="Car Accident Case"
+        />
+        <div class="gallery-overlay">
+          <div class="gallery-label">Auto & Criminal</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600"
+          alt="Business Law"
+        />
+        <div class="gallery-overlay">
+          <div class="gallery-label">Business Disputes</div>
+        </div>
+      </div>
+      <div class="gallery-item">
+        <img
+          src="https://images.unsplash.com/photo-1556761175-4b46a572b786?w=600"
+          alt="Corporate Law"
+        />
+        <div class="gallery-overlay">
+          <div class="gallery-label">Corporate Counsel</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ATTORNEYS -->
+    <section class="attorneys" id="attorneys">
+      <div class="section-header">
+        <p class="section-pre">Our Team</p>
+        <h2 class="section-title">Meet Our Attorneys</h2>
+      </div>
+      <div class="attorneys-grid">
+        <div class="attorney-card">
+          <div class="attorney-img-wrap">
+            <img
+              class="attorney-img"
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=400"
+              alt="Donald Jeffrey"
+            />
+            <div class="attorney-overlay">
+              <a href="#" class="soc-btn">f</a>
+              <a href="#" class="soc-btn">in</a>
+              <a href="#" class="soc-btn">tw</a>
             </div>
           </div>
+          <div class="attorney-name">Donald Jeffrey</div>
+          <div class="attorney-role">Senior Attorney</div>
         </div>
-      </section>
-      <section>
-        <div class="testimonials-container">
-          <div class="container">
-            <div class="testimonials-content">
-              <p class="lined-text">What Our Clients Say</p>
-              <h4>Testimonials</h4>
-              <div class="stars-icon">
-                <div class="stars">
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                  <i class="ri-star-fill"></i>
-                </div>
-              </div>
-              <p id="testimonials">
-                “I recently got myself into trouble and needed a lawyer ASAP. I
-                reached out to La Grâce Law Firm and they responded quickly on a
-                weekend. I was very anxious because a criminal charge would
-                wreak havoc with my job. The Attorneys carefully listened to me
-                and walked me through all the key things to focus on. During one
-                of the darkest times of my life, they came through and pulled me
-                back from the ledge. They really made a difference in my case
-                and my life.” <span>Paul A.</span>
-              </p>
-              <button class="btn btn-primary">
-                Read More Testimonials
-                <span> <i class="ri-arrow-right-long-fill"></i></span>
-              </button>
+        <div class="attorney-card featured">
+          <div class="attorney-img-wrap">
+            <img
+              class="attorney-img"
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400"
+              alt="Richard A. Parker"
+            />
+            <div class="attorney-overlay">
+              <a href="#" class="soc-btn">f</a>
+              <a href="#" class="soc-btn">in</a>
+              <a href="#" class="soc-btn">tw</a>
             </div>
           </div>
+          <div class="attorney-name">Richard A. Parker</div>
+          <div class="attorney-role">Lead Counsel</div>
         </div>
-      </section>
-    </main>
+        <div class="attorney-card">
+          <div class="attorney-img-wrap">
+            <img
+              class="attorney-img"
+              src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400"
+              alt="Paul Haynes"
+            />
+            <div class="attorney-overlay">
+              <a href="#" class="soc-btn">f</a>
+              <a href="#" class="soc-btn">in</a>
+              <a href="#" class="soc-btn">tw</a>
+            </div>
+          </div>
+          <div class="attorney-name">Paul Haynes</div>
+          <div class="attorney-role">Criminal Defense</div>
+        </div>
+      </div>
+    </section>
 
+    <!-- COUNTERS -->
+    <div class="counters" id="counters">
+      <div class="counter-item">
+        <div class="counter-icon">⚖️</div>
+        <div class="counter-num" data-target="1120">0</div>
+        <div class="counter-label">Won Cases</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-icon">👥</div>
+        <div class="counter-num" data-target="980">0</div>
+        <div class="counter-label">Happy Clients</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-icon">🏛️</div>
+        <div class="counter-num" data-target="60">0</div>
+        <div class="counter-label">Team Members</div>
+      </div>
+      <div class="counter-item">
+        <div class="counter-icon">🏆</div>
+        <div class="counter-num" data-target="4">0</div>
+        <div class="counter-label">Offices</div>
+      </div>
+    </div>
+
+    <!-- TESTIMONIAL -->
+    <section class="testimonial">
+      <div class="testimonial-inner">
+        <div class="section-header">
+          <p class="section-pre">Testimonials</p>
+          <h2 class="section-title">What Clients Say</h2>
+        </div>
+        <div class="test-avatars">
+          <img
+            src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=100"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
+            alt=""
+          />
+          <img
+            src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=100"
+            alt=""
+          />
+        </div>
+        <p class="test-text">
+          Working with the team at LKill was a transformative experience. They
+          handled my case with tremendous professionalism, kept me informed
+          every step of the way, and ultimately secured an outcome that exceeded
+          my expectations. I could not be more grateful for their commitment and
+          expertise.
+        </p>
+        <div class="test-author">Jeremy A. Dixon</div>
+        <div class="test-role">Client</div>
+      </div>
+    </section>
+
+    <!-- NEWS -->
+    <section class="news" id="news">
+      <div class="section-header">
+        <p class="section-pre">Latest</p>
+        <h2 class="section-title">News Updates</h2>
+      </div>
+      <div class="news-grid">
+        <div class="news-card">
+          <div class="news-img-wrap">
+            <img
+              class="news-img"
+              src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?w=600"
+              alt="News 1"
+            />
+          </div>
+          <div class="news-body">
+            <div class="news-cat">Business Law</div>
+            <div class="news-title">We Can Achieve Anything By Hard</div>
+            <div class="news-meta">April 3, 2026 &nbsp;·&nbsp; 5 min read</div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-img-wrap">
+            <img
+              class="news-img"
+              src="https://images.unsplash.com/photo-1589391886645-d51941baf7fb?w=600"
+              alt="News 2"
+            />
+          </div>
+          <div class="news-body">
+            <div class="news-cat">Criminal Law</div>
+            <div class="news-title">We Can Achieve Anything By Hard</div>
+            <div class="news-meta">March 28, 2026 &nbsp;·&nbsp; 4 min read</div>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-img-wrap">
+            <img
+              class="news-img"
+              src="https://images.unsplash.com/photo-1521791136064-7986c2920216?w=600"
+              alt="News 3"
+            />
+          </div>
+          <div class="news-body">
+            <div class="news-cat">Family Law</div>
+            <div class="news-title">We Can Achieve Anything By Hard</div>
+            <div class="news-meta">March 20, 2026 &nbsp;·&nbsp; 6 min read</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA BANNER -->
+    <section class="cta-banner">
+      <p class="section-pre" style="margin-bottom: 14px">Get In Touch</p>
+      <h2 class="cta-title">Are You Looking For A Consultation?</h2>
+      <p class="cta-sub">
+        Schedule a free, no-obligation consultation with one of our expert
+        attorneys today.<br />We're ready to listen and fight for you.
+      </p>
+      <a href="#" class="btn-gold">Free Consultation Now</a>
+    </section>
+
+    <!-- FOOTER -->
     <footer>
-      <section>
-        <div class="footer-container">
-          <div class="container">
-            <div class="footer-content">
-              <div class="footer-col1">
-                <div class="footer-logo">
-                  <img src="img/footer-logo.png" alt="" />
-                </div>
-                <div class="footer-heading">
-                  <h4>about us</h4>
-                  <p>
-                    We are a team of Attorneys providing expert advocacy. Our
-                    Attorneys offer advise in a broad range of areas,
-                    representing a vast number of individual, corporate, and
-                    government clients.
-                  </p>
-                </div>
-              </div>
-              <div class="footer-col2">
-                <div class="footer-heading">
-                  <h4>working hours</h4>
-                  <p id="work">
-                    We work 7 days a week, every day excluding major holidays.
-                    Contact us if you have an emergency, with our Hotline and
-                    Contact form.
-                  </p>
-
-                  <div class="col1">
-                    <div class="days">
-                      <p>Monday - Friday:</p>
-                    </div>
-                    <div class="time">
-                      <p>10:00 - 16:00</p>
-                    </div>
-                  </div>
-
-                  <div class="col2">
-                    <div class="days">
-                      <p>Saturday:</p>
-                    </div>
-                    <div class="time">
-                      <p>12:00 - 15:00</p>
-                    </div>
-                  </div>
-
-                  <div class="col3">
-                    <div class="days">
-                      <p>Sunday and holidays:</p>
-                    </div>
-                    <div class="time">
-                      <p>09:00 - 12:00</p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="footer-col3">
-                <div class="footer-heading">
-                  <h4>menu</h4>
-                  <div class="gap"></div>
-                  <div class="footer-menu-list">
-                    <div class="menu-item">
-                      <i
-                        class="ri-arrow-right-circle-fill"
-                        id="footer-icon"
-                      ></i>
-                      <a href="#">Home</a>
-                    </div>
-                  </div>
-                  <div class="footer-menu-list">
-                    <div class="menu-item">
-                      <i
-                        class="ri-arrow-right-circle-fill"
-                        id="footer-icon"
-                      ></i>
-                      <a href="#">About Us</a>
-                    </div>
-                  </div>
-                  <div class="footer-menu-list">
-                    <div class="menu-item">
-                      <i
-                        class="ri-arrow-right-circle-fill"
-                        id="footer-icon"
-                      ></i>
-                      <a href="#">Practice Areas</a>
-                    </div>
-                  </div>
-                  <div class="footer-menu-list">
-                    <div class="menu-item">
-                      <i
-                        class="ri-arrow-right-circle-fill"
-                        id="footer-icon"
-                      ></i>
-                      <a href="#">Team</a>
-                    </div>
-                  </div>
-                  <div class="footer-menu-list">
-                    <div class="menu-item">
-                      <i
-                        class="ri-arrow-right-circle-fill"
-                        id="footer-icon"
-                      ></i>
-                      <a href="#">Testimonials</a>
-                    </div>
-                  </div>
-                  <div class="footer-menu-list">
-                    <div class="menu-item">
-                      <i
-                        class="ri-arrow-right-circle-fill"
-                        id="footer-icon"
-                      ></i>
-                      <a href="#">Contact</a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <div class="footer-logo">
+            <div class="footer-logo-icon">L</div>
+            <span>LKill</span>
+          </div>
+          <p class="footer-about">
+            Providing exceptional legal services with integrity and dedication.
+            We stand by our clients through every challenge, big or small.
+          </p>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z" />
+              <circle cx="12" cy="10" r="3" />
+            </svg>
+            <span>123 Justice Street, Suite 400<br />New York, NY 10001</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 1.18h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 8.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"
+              />
+            </svg>
+            <span>+1 (800) 555-LEGAL</span>
+          </div>
+          <div class="footer-contact-item">
+            <svg viewBox="0 0 24 24">
+              <path
+                d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+              />
+              <polyline points="22,6 12,13 2,6" />
+            </svg>
+            <span>info@lkilllaw.com</span>
           </div>
         </div>
-
-        <div class="copyright-notice">
-          <p>© 2026. La Grâce Law Firm | All Rights Reserved.</p>
+        <div>
+          <div class="footer-col-title">Practice Areas</div>
+          <ul class="footer-links">
+            <li><a href="#">Family Law</a></li>
+            <li><a href="#">Business Law</a></li>
+            <li><a href="#">Criminal Law</a></li>
+            <li><a href="#">Land Law</a></li>
+            <li><a href="#">Civil Law</a></li>
+            <li><a href="#">Education Law</a></li>
+          </ul>
         </div>
-      </section>
+        <div>
+          <div class="footer-col-title">Quick Links</div>
+          <ul class="footer-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Our Attorneys</a></li>
+            <li><a href="#">Case Results</a></li>
+            <li><a href="#">Testimonials</a></li>
+            <li><a href="#">Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="footer-col-title">Our News</div>
+          <ul class="footer-links">
+            <li><a href="#">Latest Articles</a></li>
+            <li><a href="#">Press Releases</a></li>
+            <li><a href="#">Legal Updates</a></li>
+            <li><a href="#">Case Studies</a></li>
+            <li><a href="#">Newsletter</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div class="footer-copy">
+          © 2026 LKill Law Firm. All rights reserved.
+        </div>
+        <div class="footer-btm-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms of Service</a>
+          <a href="#">Disclaimer</a>
+        </div>
+      </div>
     </footer>
 
     <script src="js/script.js"></script>

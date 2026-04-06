@@ -1,94 +1,67 @@
-hamburger.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-  hamburger.classList.toggle("active");
-});
+// Nav toggle
+function toggleNav() {
+  document.getElementById("navbar").classList.toggle("open");
+}
 
-const slider = document.querySelector(".slider");
-const slides = document.querySelectorAll(".slide");
-const prevBtn = document.querySelector(".prev");
-const nextBtn = document.querySelector(".next");
-const dots = document.querySelectorAll(".dot");
-const sliderContainer = document.querySelector(".slider-container");
+// Counter animation
+const counters = document.querySelectorAll(".counter-num");
+let animated = false;
 
-let currentIndex = 0; // Tracks the current slide index
-let autoSlideInterval; // Will hold the interval ID for auto-sliding
-
-// Function to update the active dot indicator
-function updateDots() {
-  dots.forEach((dot, index) => {
-    if (index === currentIndex) {
-      dot.classList.add("active");
-    } else {
-      dot.classList.remove("active");
-    }
+function animateCounters() {
+  counters.forEach((el) => {
+    const target = parseInt(el.dataset.target);
+    const duration = 1800;
+    const step = target / (duration / 16);
+    let current = 0;
+    const timer = setInterval(() => {
+      current += step;
+      if (current >= target) {
+        current = target;
+        clearInterval(timer);
+      }
+      el.textContent = Math.floor(current).toLocaleString();
+    }, 16);
   });
 }
 
-// Function to display a specific slide based on the index
-function showSlides(index) {
-  if (index >= slides.length) {
-    currentIndex = 0; // Reset to first slide if at the end
-  } else if (index < 0) {
-    currentIndex = slides.length - 1; // Go to last slide if at the beginning
-  } else {
-    currentIndex = index; // Otherwise, set to the provided index
-  }
-  slider.style.transform = `translateX(-${currentIndex * 100}%)`; // Slide transition
-  updateDots(); // Update the dots to reflect the current slide
-}
+const observer = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting && !animated) {
+        animated = true;
+        animateCounters();
+      }
+    });
+  },
+  { threshold: 0.4 },
+);
 
-// Function to move to the next slide
-function nextSlide() {
-  showSlides(currentIndex + 1);
-}
+const counterSection = document.getElementById("counters");
+if (counterSection) observer.observe(counterSection);
 
-// Function to move to the previous slide
-function prevSlide() {
-  showSlides(currentIndex - 1);
-}
+// Scroll reveal
+const revealEls = document.querySelectorAll(
+  ".practice-card, .attorney-card, .news-card, .stat-item",
+);
+const revealObserver = new IntersectionObserver(
+  (entries) => {
+    entries.forEach((entry, i) => {
+      if (entry.isIntersecting) {
+        setTimeout(() => {
+          entry.target.style.opacity = "1";
+          entry.target.style.transform = "translateY(0)";
+        }, i * 80);
+        revealObserver.unobserve(entry.target);
+      }
+    });
+  },
+  { threshold: 0.1 },
+);
 
-// Start the automatic sliding of images
-function startAutoSlide() {
-  autoSlideInterval = setInterval(nextSlide, 8000); // Slide every 4 seconds
-}
-
-// Stop the automatic sliding
-function stopAutoSlide() {
-  clearInterval(autoSlideInterval); // Clear the interval
-}
-
-// Add click event listeners to dots for direct slide navigation
-dots.forEach((dot) => {
-  dot.addEventListener("click", () => {
-    stopAutoSlide(); // Stop auto-slide when manually selecting a slide
-    showSlides(parseInt(dot.dataset.index)); // Show the selected slide
-    startAutoSlide(); // Restart auto-slide
-  });
-});
-
-// Add event listeners for navigation buttons
-nextBtn.addEventListener("click", nextSlide);
-prevBtn.addEventListener("click", prevSlide);
-
-// Stop auto-slide when the mouse enters the slider container
-sliderContainer.addEventListener("mouseover", stopAutoSlide);
-
-// Restart auto-slide when the mouse leaves the slider container
-sliderContainer.addEventListener("mouseout", startAutoSlide);
-
-// Start auto-slide when the page loads
-startAutoSlide();
-updateDots(); // Initialize the dots
-
-const navbar = document.querySelector(".navbar");
-const stickyPoint = navbar.offsetTop;
-
-window.addEventListener("scroll", () => {
-  if (window.pageYOffset >= stickyPoint) {
-    navbar.classList.add("sticky");
-    document.body.style.paddingTop = navbar.offsetHeight + "px";
-  } else {
-    navbar.classList.remove("sticky");
-    document.body.style.paddingTop = "0px";
-  }
+revealEls.forEach((el) => {
+  el.style.opacity = "0";
+  el.style.transform = "translateY(24px)";
+  el.style.transition =
+    "opacity .5s ease, transform .5s ease, background .3s, border-color .3s, box-shadow .3s";
+  revealObserver.observe(el);
 });
