@@ -231,7 +231,7 @@ nav {
     linear-gradient(
       135deg,
       rgba(17, 24, 39, 0.88) 0%,
-      rgba(26, 35, 64, 0.82) 60%,
+      rgba(26, 35, 64, 0.82) 50%,
       rgba(17, 24, 39, 0.7) 100%
     ),
     url("/img/homepage_images/about-us-hero.jpg") center/cover no-repeat;
