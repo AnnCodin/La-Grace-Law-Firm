@@ -781,8 +781,9 @@ nav {
 .cta-sub {
   color: var(--white);
   font-size: 15px;
-  margin-bottom: 36px;
   line-height: 1.7;
+  max-width: 590px;
+  margin: 0 auto 36px;
 }
 
 /* ── FOOTER ── */
@@ -863,7 +864,6 @@ footer {
   font-family: "Playfair Display", serif;
   margin-bottom: 22px;
 }
-
 .working-sub {
   color: var(--white);
   font-size: 16px;
@@ -967,17 +967,23 @@ footer {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 64px;
+    top: 80px;
     left: 0;
     right: 0;
-    background: var(--navy-dark);
+    background: var(--navy);
     padding: 20px 5%;
     gap: 18px;
+  }
+  .nav-links a {
+    color: #fff;
   }
   nav.open .nav-cta {
     display: block;
     margin: 0 5% 16px;
     text-align: center;
+  }
+  .hero-title {
+    line-height: 75px;
   }
   .stats-bar {
     grid-template-columns: 1fr;
@@ -991,7 +997,7 @@ footer {
     gap: 40px;
   }
   .about-img {
-    height: 300px;
+    height: 500px;
   }
   .about-badge {
     right: 0;
@@ -1023,6 +1029,19 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .hero-title {
+    line-height: 55px;
+  }
+  .hero-sub {
+    font-size: 15px;
+  }
+  .about-img {
+    height: 500px;
+  }
+  .about-title {
+    font-size: 32px;
+    line-height: 40px;
+  }
   .practice-grid {
     grid-template-columns: 1fr;
   }
