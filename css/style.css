@@ -284,6 +284,40 @@ nav {
   margin-bottom: 22px;
 }
 
+/* -- TESTIMONIALS HERO -- */
+.testimonials-text {
+  color: var(--text-gray);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  width: 100%;
+  padding: 60px 8% 0 8%;
+  justify-content: center;
+  margin: auto;
+}
+.testimonials-hero {
+  position: relative;
+  min-height: 60vh;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(6, 6, 6, 0.88) 0%,
+      rgba(0, 0, 0, 0.3) 50%,
+      rgba(17, 24, 39, 0.7) 100%
+    ),
+    url("/img/homepage_images/photo-15567611754b46a572b750.jpg") center/cover
+      no-repeat;
+  display: flex;
+  align-items: center;
+}
+.testimonials-hero-title {
+  font-size: 46px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 22px;
+}
+
 /* ── HERO STATS BAR ── */
 .stats-bar {
   background: var(--navy);
@@ -455,6 +489,59 @@ nav {
   line-height: 25px;
   text-align: justify;
   margin-bottom: 16px;
+}
+
+/* -- TESTIMONIALS MAIN -- */
+.testimonials-container {
+  background-color: var(--light-bg);
+  padding: 80px 7%;
+}
+.testimonials-content {
+  display: flex;
+  gap: 60px;
+}
+.testimonials-left {
+  width: 100%;
+  max-width: 75%;
+  flex: 1;
+}
+.stars-icon {
+  color: var(--gold);
+  padding-bottom: 15px;
+}
+.text-left p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  padding-bottom: 50px;
+}
+.testimonials-right {
+  flex: 1;
+  width: 100%;
+  max-width: 25%;
+  justify-content: center;
+  text-align: center;
+  border: 5px solid var(--navy);
+}
+.right-content {
+  padding: 60px 20px 0 20px;
+}
+.right-content h4 {
+  font-size: 22px;
+  line-height: 28px;
+  text-align: center;
+  width: 100%;
+  max-width: 80%;
+  margin: auto;
+  color: var(--navy);
+  padding-bottom: 50px;
+  font-weight: 700;
+}
+.right-content p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: auto;
+  padding-bottom: 50px;
 }
 /* -- WHY CHOOSE US-- */
 .about-us-why {
@@ -683,22 +770,6 @@ nav {
 .attorney-card:hover .attorney-img {
   transform: scale(1.05);
 }
-/* .attorney-overlay {
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(
-    to top,
-    rgba(26, 35, 64, 0.7) 0%,
-    transparent 60%
-  );
-  opacity: 0;
-  transition: opacity 0.3s;
-  display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  padding-bottom: 18px;
-  gap: 12px;
-} */
 .attorney-card:hover .attorney-overlay {
   opacity: 1;
 }
