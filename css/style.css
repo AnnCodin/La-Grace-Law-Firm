@@ -750,8 +750,6 @@ nav {
   text-align: center;
   border-top: 3px solid var(--gold);
 }
-.counter-item {
-}
 .counter-icon {
   font-size: 36px;
   color: var(--gold);
@@ -929,8 +927,6 @@ footer {
   gap: 45px;
   padding-bottom: 48px;
   border-bottom: 1.3px solid var(--gold);
-}
-.footer-brand {
 }
 .footer-logo img {
   width: 100%;
