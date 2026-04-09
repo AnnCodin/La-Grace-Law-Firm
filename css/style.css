@@ -47,26 +47,6 @@ nav {
   width: 100%;
   max-width: 130px;
 }
-/* .nav-logo-icon {
-  width: 32px;
-  height: 32px;
-  border-radius: 50%;
-  background: var(--gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  color: #fff;
-  font-size: 14px;
-} */
-/* .nav-logo span {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  letter-spacing: 1px;
-  font-family: "Playfair Display", serif;
-} */
 .nav-links {
   display: flex;
   gap: 28px;
@@ -271,6 +251,16 @@ nav {
 }
 
 /* -- TEAM HERO -- */
+.team-text {
+  color: var(--text-gray);
+  font-size: 16px;
+  line-height: 24px;
+  text-align: justify;
+  width: 100%;
+  padding: 60px 8% 0 8%;
+  justify-content: center;
+  margin: auto;
+}
 .team-hero {
   position: relative;
   min-height: 60vh;
@@ -281,8 +271,8 @@ nav {
       rgba(0, 0, 0, 0.6) 50%,
       rgba(17, 24, 39, 0.7) 100%
     ),
-    url("/img/homepage_images/photo-1521791136064-7986c2920332.jpg") center/cover
-      no-repeat;
+    url("/img/homepage_images/photo-1521791136064-7986c2920332.jpg")
+      center/cover no-repeat;
   display: flex;
   align-items: center;
 }
