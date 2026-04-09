@@ -270,6 +270,30 @@ nav {
   margin-bottom: 22px;
 }
 
+/* -- TEAM HERO -- */
+.team-hero {
+  position: relative;
+  min-height: 60vh;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(6, 6, 6, 0.88) 0%,
+      rgba(0, 0, 0, 0.6) 50%,
+      rgba(17, 24, 39, 0.7) 100%
+    ),
+    url("/img/homepage_images/photo-1521791136064-7986c2920332.jpg") center/cover
+      no-repeat;
+  display: flex;
+  align-items: center;
+}
+.team-hero-title {
+  font-size: 46px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 22px;
+}
+
 /* ── HERO STATS BAR ── */
 .stats-bar {
   background: var(--navy);
