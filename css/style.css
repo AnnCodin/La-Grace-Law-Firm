@@ -516,6 +516,7 @@ nav {
   padding-bottom: 50px;
 }
 .testimonials-right {
+  margin: auto;
   flex: 1;
   width: 100%;
   max-width: 25%;
@@ -528,7 +529,7 @@ nav {
 }
 .right-content h4 {
   font-size: 22px;
-  line-height: 28px;
+  line-height: 30px;
   text-align: center;
   width: 100%;
   max-width: 80%;
@@ -1216,8 +1217,18 @@ footer {
   .attorneys-grid {
     grid-template-columns: 1fr 1fr;
   }
-  .news-grid {
-    grid-template-columns: 1fr;
+  .testimonials-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .testimonials-left {
+    width: 100%;
+    max-width: 100%;
+    flex: 1;
+  }
+  .testimonials-right {
+    max-width: 100%;
   }
   .footer-grid {
     grid-template-columns: 1fr;
@@ -1259,6 +1270,19 @@ footer {
   .hero-btns {
     flex-direction: column;
     align-items: center;
+  }
+  .testimonials-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .testimonials-left {
+    width: 100%;
+    max-width: 100%;
+    flex: 1;
+  }
+  .testimonials-right {
+    max-width: 100%;
   }
 }
 
