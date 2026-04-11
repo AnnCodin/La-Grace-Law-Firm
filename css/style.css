@@ -345,10 +345,73 @@ nav {
 .location {
   width: 90%;
   margin: auto;
-  padding: 80px 0;
+  padding: 80px 0 0 0;
 }
 .location iframe {
   width: 100%;
+}
+.contact-page {
+  display: flex;
+  padding: 80px 5%;
+}
+.row {
+  width: 100%;
+  max-width: 100%;
+}
+.contact-item {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  margin-bottom: 40px;
+}
+.contact-item svg {
+  width: 16px;
+  height: 16px;
+  stroke: var(--gold);
+  fill: none;
+  stroke-width: 1.8;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.contact-item span {
+  color: #000;
+  font-size: 15px;
+  line-height: 20px;
+  font-weight: 400;
+}
+.contact-form {
+  width: 100%;
+  max-width: 50%;
+}
+.contact-form h4 {
+  font-size: 32px;
+  line-height: 40px;
+  color: var(--navy);
+  text-transform: uppercase;
+  padding-bottom: 15px;
+}
+.contact-form p {
+  font-size: 16px;
+  line-height: 24px;
+  padding-bottom: 20px;
+}
+.contact-form form {
+  background-color: var(--light-bg);
+  padding: 30px;
+}
+.contact-form input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 13px;
+  outline: none;
+  font-family: "lato";
+  font-size: 16px;
+  line-height: 24px;
+  color: var(--text-light);
+}
+.contact-form button {
+  margin-top: 30px;
 }
 
 /* ── HERO STATS BAR ── */
@@ -1041,25 +1104,6 @@ footer {
   gap: 8px;
   margin-bottom: 18px;
 }
-/* .footer-logo-icon {
-  width: 34px;
-  height: 34px;
-  border-radius: 50%;
-  background: var(--gold);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-family: "Playfair Display", serif;
-  font-weight: 700;
-  color: #fff;
-  font-size: 14px;
-} */
-/* .footer-logo span {
-  color: #fff;
-  font-size: 18px;
-  font-weight: 700;
-  font-family: "Playfair Display", serif;
-} */
 .footer-about {
   color: var(--white);
   font-size: 16px;
@@ -1271,6 +1315,15 @@ footer {
     flex-direction: column;
     text-align: center;
   }
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contact-form {
+    width: 100%;
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -1315,6 +1368,15 @@ footer {
     flex: 1;
   }
   .testimonials-right {
+    max-width: 100%;
+  }
+  .contact-page {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+  }
+  .contact-form {
+    width: 100%;
     max-width: 100%;
   }
 }
