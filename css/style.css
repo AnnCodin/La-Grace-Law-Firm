@@ -1209,6 +1209,28 @@ footer {
 .footer-btm-links a:hover {
   color: var(--gold);
 }
+.privacy-policy {
+  padding: 80px 7%;
+}
+.privacy-content h3 {
+  font-size: 46px;
+  line-height: 52px;
+  color: var(--navy);
+}
+.privacy-content h4 {
+  font-size: 22px;
+  line-height: 26px;
+  color: var(--navy);
+  padding: 20px 0;
+}
+.privacy-content p {
+  font-size: 16px;
+  line-height: 30px;
+}
+.privacy-content li {
+  padding: 6px 0;
+  margin-left: 30px;
+}
 
 /* ── ANIMATIONS ── */
 @keyframes fadeUp {
