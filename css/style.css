@@ -1226,10 +1226,14 @@ footer {
 .privacy-content p {
   font-size: 16px;
   line-height: 30px;
+  text-align: justify;
 }
 .privacy-content li {
   padding: 6px 0;
   margin-left: 30px;
+}
+.gap {
+  padding-top: 20px;
 }
 
 /* ── ANIMATIONS ── */
